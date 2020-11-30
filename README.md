@@ -57,4 +57,4 @@ Using Rmarkdown, as many people know, is a huge result of trial and error. If yo
 
 
 
-Note: I do not own the rights to the images used in creation of this template. The use of such images are assumed to be used in accordance with UCLA Policy 110 as described [here](https://www.adminvc.ucla.edu/marks/request/name-seal-marks/campus-unit).
+***Disclaimer***: I do not own the rights to the images used in creation of this template. The use of such images are assumed to be used in accordance with UCLA Policy 110 as described [here](https://www.adminvc.ucla.edu/marks/request/name-seal-marks/campus-unit).

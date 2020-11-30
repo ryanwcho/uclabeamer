@@ -1,8 +1,8 @@
 # UCLA Rmarkdown Beamer Template
 
 <p float="center">
-  <img src="https://user-images.githubusercontent.com/34947559/100639492-16baa980-32ea-11eb-8144-337fbecbfefb.png" width="450" />
-  <img src="https://user-images.githubusercontent.com/34947559/100639502-18846d00-32ea-11eb-8a98-fcb94deac850.png" width="450" /> 
+  <img src="https://user-images.githubusercontent.com/34947559/100639492-16baa980-32ea-11eb-8144-337fbecbfefb.png" width="350" />
+  <img src="https://user-images.githubusercontent.com/34947559/100639502-18846d00-32ea-11eb-8a98-fcb94deac850.png" width="350" /> 
 </p>
 
 [Rmarkdown](https://rmarkdown.rstudio.com/) is a popular way for researchers to present their research in a number of different formats. One of the benefits for researchers is that Rmarkdown can help produce a wide array of documents, to include Beamer presentations.

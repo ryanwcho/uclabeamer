@@ -1,0 +1,78 @@
+\usetheme{Madrid}
+\useoutertheme{miniframes} % Alternatively: miniframes, infolines, split
+\useinnertheme{circles}
+\definecolor{uclablue}{RGB}{39, 116, 174}
+\usecolortheme[named=uclablue]{structure}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{multimedia}
+\usepackage[overlay]{textpos}
+\usepackage{enumerate}
+\usepackage{threeparttable}
+\usepackage{textcomp}
+\usepackage{booktabs} % Needed for Latex table
+\usepackage{array} % Needed for Latex Table
+\usepackage{makecell} % Needed for Latex Table
+\usepackage{multirow} % Needed for Latex Table
+\setbeamercovered{transparent}
+
+\author{First M. Last}
+\institute{Department of X}
+% Defines the graphic but does not place it. See below for that
+\titlegraphic{\includegraphics[width=0.2\paperwidth]{ucla.png}}
+
+% Creates background bruin bear
+\usebackgroundtemplate{%
+\tikz[overlay,remember picture] \node[opacity=0.1, at=(current page.south east),anchor=south east]{\includegraphics[height=0.4\paperheight]{ucla1.png}};}
+
+
+% Creates the title page I want it to with UCLA logo adjusted
+\setbeamertemplate{title page}{%
+  \vbox{}
+  \vfill
+  \begingroup
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,colsep=-4bp,rounded=true,shadow=true]{title}
+      \usebeamerfont{title}\inserttitle\par%
+      \ifx\insertsubtitle\@empty%
+      \else%
+        \vskip0.25em%
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+      \fi%     
+    \end{beamercolorbox}%
+    \vskip1em\par
+	\insertauthor
+	\par
+	\insertinstitute
+	\vskip2em\par
+    {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+  \endgroup
+  \vfill
+}
+
+% Allows me to create a section slide to introduce sections
+\AtBeginSubsubsection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsubsubsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+
+% Allows me to use two columns
+\def\begincols{\begin{columns}}
+\def\begincol{\begin{column}}
+\def\endcol{\end{column}}
+\def\endcols{\end{columns}}
+
+
+
+\AtBeginPart{}
+\AtBeginSection{}
+\AtBeginSubsection{}
+\setlength{\emergencystretch}{0em}
+\setlength{\parskip}{0pt}

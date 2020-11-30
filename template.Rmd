@@ -1,0 +1,45 @@
+---
+title: Title
+subtitle: Subtitle
+output:
+  beamer_presentation:
+    keep_tex: true
+#    toc: true
+    latex_engine: xelatex
+    slide_level: 4 # Change this depending on which paragraphs you need
+    include:
+      in_header: "C:/Users/Ryan Cho/Dropbox/Sociology/beamer/beamer.tex"
+      
+# Note that you need four spaces (two tabs) to have inner bullets
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(fig.align="center")
+options(tinytex.verbose = TRUE)
+
+```
+
+# Navigation Bar Header
+
+## Section Header
+
+#### Page Header
+
+- Bullet Point 1
+- Bullet Point 2
+
+#### Page Header 2
+
+##### Box 1
+
+- Example text
+
+##### Box 2
+
+- Example Text
+
+#### Page Header 3
+  \begin{itemize}
+    \item<1> Way to highlight each point separately
+    \item<2> Emphasize certain bullets. 
+  \end{itemize}

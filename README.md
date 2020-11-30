@@ -9,8 +9,6 @@
 
 This template was created by a need to have a simple and custom theme that I could use for presentations and the like. The template is based off the Madrid Beamer theme, and simply adds on a blue color scheme with a UCLA logo as the header and a transparent Bruin in the lower right corner. It's not much, but hopefully will save you some time. 
 
-If you have any familiarity with Rmarkdown, the implementation should be fairly straightforward. However, a few things of note for this to work for you:
-
 ## Using the template
 
 If you have any familiarity with Rmarkdown, the implementation should be fairly straightforward. However, a few things of note for this to work for you once downloaded.

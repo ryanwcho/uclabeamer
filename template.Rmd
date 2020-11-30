@@ -8,7 +8,7 @@ output:
     latex_engine: xelatex
     slide_level: 4 # Change this depending on which paragraphs you need
     include:
-      in_header: "C:/Users/Ryan Cho/Dropbox/Sociology/beamer/beamer.tex"
+      in_header: "filepath/beamer.tex"
       
 # Note that you need four spaces (two tabs) to have inner bullets
 ---
@@ -22,6 +22,7 @@ options(tinytex.verbose = TRUE)
 # Navigation Bar Header
 
 ## Section Header
+
 
 #### Page Header
 
@@ -38,7 +39,30 @@ options(tinytex.verbose = TRUE)
 
 - Example Text
 
-#### Page Header 3
+### Intermediate Title Page
+
+#### Page Header 3 - With Columns
+\begincols
+  \begincol{.48\textwidth}
+
+Column 1
+
+  - Item 1
+  - Item 2
+
+\endcol
+
+\begincol{.48\textwidth}
+
+Column 2
+
+  - Item 1
+  - Item 2
+
+  \endcol
+\endcols
+
+#### Page Header 4
   \begin{itemize}
     \item<1> Way to highlight each point separately
     \item<2> Emphasize certain bullets. 
